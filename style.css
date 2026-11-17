@@ -1,8 +1,4 @@
-/* style.css for Healthcare for Everyone */
-/* Only uses the CSS from our class examples (color, border, padding, text-align, etc.) */
 
-
-/* whole page */
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
@@ -27,13 +23,16 @@ h3 {
   color: black;
 }
 
-/* keeps the text in the middle of the page */
+.title {
+  text-size-adjust: 9;
+}
+
 .wrap {
   width: 80%;
   margin: 0 auto;
+  text-decoration: none;
 }
 
-/* top menu */
 .nav {
   background-color: lightblue;
   border-bottom: 3px solid DodgerBlue;
@@ -44,6 +43,7 @@ h3 {
   font-size: 22px;
   font-weight: bold;
   color: black;
+  text-decoration: none;
 }
 
 .links {
@@ -55,7 +55,6 @@ h3 {
   margin-left: 15px;
 }
 
-/* big blue part at the top */
 .hero {
   background-color: lightblue;
   padding: 30px 0;
@@ -78,7 +77,6 @@ h3 {
   font-size: 20px;
 }
 
-/* buttons */
 .btn {
   background-color: white;
   color: black;
@@ -94,7 +92,6 @@ h3 {
   color: white;
 }
 
-/* the box that says what families can get */
 .get {
   background-color: white;
   border: 2px solid DodgerBlue;
@@ -107,7 +104,6 @@ h3 {
   color: DodgerBlue;
 }
 
-/* sections */
 section {
   padding: 20px 0;
 }
@@ -143,7 +139,6 @@ section {
   color: DodgerBlue;
 }
 
-/* ways to help (the radio buttons are hidden, the cards are the labels) */
 .sr {
   opacity: 0;
   width: 1px;
@@ -175,7 +170,6 @@ section {
   content: "Chosen!";
 }
 
-/* sign up form */
 .join {
   background-color: lightgrey;
   border: 2px solid grey;
@@ -199,7 +193,6 @@ input {
   margin-bottom: 15px;
 }
 
-/* thank you message, only shows after you press the button */
 .done {
   display: none;
   background-color: white;
@@ -216,7 +209,6 @@ input {
   display: none;
 }
 
-/* contact */
 .cbox {
   border: 2px solid grey;
   border-radius: 12px;
@@ -239,7 +231,6 @@ input {
   color: grey;
 }
 
-/* bottom of the page */
 footer {
   background-color: lightblue;
   border-top: 3px solid DodgerBlue;
