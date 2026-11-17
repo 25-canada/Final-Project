@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Healthcare for Everyone</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      Healthcare for Everyone
+    </a>
+    <nav class="links" aria-label="Page sections">
+      <a href="#problem">The problem</a>
+      <a href="#solution">Our solution</a>
+      <a href="#help">Ways to help</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <p class="eyebrow">Health Access Program</p>
+        <h1>Care should not depend on what is in your wallet.</h1>
+        <p class="lead">We connect low-income families with free consultations, discounted medicines, and financial help for treatment, through local partners.</p>
+        <div class="btns">
+          <a class="btn btn-primary" href="#join">Join the program</a>
+          <a class="btn btn-ghost" href="#solution">See how it works</a>
+        </div>
+      </div>
+      <aside class="get" aria-label="What families can get">
+        <p class="eyebrow">What families can get</p>
+        <div class="get-item">
+          <div><b>Discounted medicines</b><br><span>Through partner pharmacies.</span></div>
+        </div>
+        <div class="get-item">
+          <div><b>Free consultations</b><br><span>Checkups and lab tests with hospitals.</span></div>
+        </div>
+        <div class="get-item">
+          <div><b>Financial assistance</b><br><span>Help paying for medical treatment.</span></div>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <section id="problem">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">The problem</p>
+        <h2>Many families skip care because they cannot pay for it.</h2>
+        <p>Low-income families struggle to afford medicines, medical checkups, laboratory tests, and treatments. Some choose not to visit a hospital or buy their prescribed medicines at all.</p>
+      </div>
+      <div class="row">
+        <div class="card"><h3>Prescriptions go unfilled</h3><p>Medicine costs lead people to leave prescribed treatment unbought.</p></div>
+        <div class="card"><h3>Checkups get postponed</h3><p>Consultation and laboratory fees keep families away from hospitals.</p></div>
+        <div class="card deep"><h3>Illness gets worse</h3><p>Untreated conditions can turn into more serious health problems.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="solution">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">Our solution</p>
+        <h2>Communities and care providers working together.</h2>
+        <p>We provide affordable medicines and free medical assistance programs. Communities work with local government units, hospitals, pharmacies, and health organizations to bring care within reach.</p>
+      </div>
+      <div class="row">
+        <div class="pair">
+          <p class="eyebrow">Who we work with</p>
+          <ul><li>Local government units</li><li>Hospitals</li><li>Pharmacies</li><li>Health organizations</li></ul>
+        </div>
+        <div class="arrow" aria-hidden="true">→</div>
+        <div class="pair">
+          <p class="eyebrow">What families receive</p>
+          <ul><li>Free consultations</li><li>Discounted medicines</li><li>Financial assistance for medical treatments</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="help">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">Ways to help</p>
+        <h2>Pick one way to start.</h2>
+        <p>Click one card, then sign up below.</p>
+      </div>
+      <div class="row">
+        <input class="sr" type="radio" id="w1" name="role" value="organize a medicine donation drive" form="signup" checked>
+        <label class="way" for="w1"><h3>Organize medicine donation drives</h3><p>Collect unused, unexpired medicines and supplies from your neighborhood or workplace.</p><span class="pick"></span></label>
+
+        <input class="sr" type="radio" id="w2" name="role" value="support a medical assistance program" form="signup">
+        <label class="way" for="w2"><h3>Support medical assistance programs</h3><p>Give your time or funds to programs that cover consultations, tests, and treatment.</p><span class="pick"></span></label>
+
+        <input class="sr" type="radio" id="w3" name="role" value="connect families with government health services" form="signup">
+        <label class="way" for="w3"><h3>Connect families with government health services</h3><p>Help neighbors find and apply for the public services they already qualify for.</p><span class="pick"></span></label>
+
+        <input class="sr" type="radio" id="w4" name="role" value="spread healthcare information" form="signup">
+        <label class="way" for="w4"><h3>Spread healthcare information</h3><p>Share where to get free consultations and discounted medicines in your community.</p><span class="pick"></span></label>
+      </div>
+    </div>
+  </section>
+
+  <section id="join">
+    <div class="wrap">
+      <div class="join">
+        <div class="join-copy">
+          <h2>Be part of the solution.</h2>
+          <p>Leave your name and a way to reach you. A program coordinator will follow up about the role you chose.</p>
+        </div>
+        <div class="join-form">
+          <div class="done" id="thanks" role="status">
+            <h3>Thank you.</h3>
+            <p>This is a preview site, so nothing was saved. On the live site, your sign-up would reach the program team.</p>
+            <a class="btn" href="#join">Fill in again</a>
+          </div>
+          <form id="signup" action="#thanks" method="get">
+            <div class="field"><label for="f-name">Full name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+            <div class="field"><label for="f-contact">Mobile number or email</label><input id="f-contact" name="contact" type="text" autocomplete="email" required></div>
+            <button class="btn btn-primary" type="submit">Yes, count me in</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap contact">
+      <div class="head"><p class="eyebrow">Contact</p><h2>Prefer to talk to someone?</h2></div>
+      <div class="cbox"><span class="k">Mobile</span><br><span class="v">09XX XXX XXXX</span><br><span class="n">Placeholder number. Replace before launch.</span></div>
+      <div class="cbox"><span class="k">Email</span><br><span class="v">email.draft@example.com</span><br><span class="n">Placeholder address. Replace before launch.</span></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap"><span>© 2026 Healthcare for Everyone</span><span>Health Access Program</span></div>
+</footer>
+
+</body>
+</html>

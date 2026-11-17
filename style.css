@@ -1,0 +1,254 @@
+/* style.css for Healthcare for Everyone */
+/* Only uses the CSS from our class examples (color, border, padding, text-align, etc.) */
+
+
+/* whole page */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: black;
+  background-color: white;
+  margin: 0;
+}
+
+h1 {
+  font-size: 40px;
+  color: black;
+}
+
+h2 {
+  font-size: 30px;
+  color: DodgerBlue;
+}
+
+h3 {
+  font-size: 20px;
+  color: black;
+}
+
+/* keeps the text in the middle of the page */
+.wrap {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* top menu */
+.nav {
+  background-color: lightblue;
+  border-bottom: 3px solid DodgerBlue;
+  padding: 10px 0;
+}
+
+.brand {
+  font-size: 22px;
+  font-weight: bold;
+  color: black;
+}
+
+.links {
+  text-align: right;
+}
+
+.links a {
+  color: black;
+  margin-left: 15px;
+}
+
+/* big blue part at the top */
+.hero {
+  background-color: lightblue;
+  padding: 30px 0;
+}
+
+.hero h1 {
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+
+.eyebrow {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: DodgerBlue;
+}
+
+.lead {
+  font-size: 20px;
+}
+
+/* buttons */
+.btn {
+  background-color: white;
+  color: black;
+  font-size: 18px;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.btn-primary {
+  background-color: DodgerBlue;
+  color: white;
+}
+
+/* the box that says what families can get */
+.get {
+  background-color: white;
+  border: 2px solid DodgerBlue;
+  border-radius: 12px;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.get b {
+  color: DodgerBlue;
+}
+
+/* sections */
+section {
+  padding: 20px 0;
+}
+
+.head p {
+  font-size: 19px;
+}
+
+.card {
+  background-color: lightgrey;
+  border: 2px solid grey;
+  border-radius: 12px;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+.deep {
+  background-color: lightblue;
+  border-color: DodgerBlue;
+}
+
+.pair {
+  background-color: lightblue;
+  border: 2px solid DodgerBlue;
+  border-radius: 12px;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+.arrow {
+  font-size: 30px;
+  text-align: center;
+  color: DodgerBlue;
+}
+
+/* ways to help (the radio buttons are hidden, the cards are the labels) */
+.sr {
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+.way {
+  display: block;
+  font-weight: normal;
+  background-color: lightgrey;
+  border: 2px solid grey;
+  border-radius: 12px;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+.pick::before {
+  content: "Click to choose";
+  font-weight: bold;
+  color: DodgerBlue;
+}
+
+.sr:checked + .way {
+  background-color: lightblue;
+  border-color: DodgerBlue;
+}
+
+.sr:checked + .way .pick::before {
+  content: "Chosen!";
+}
+
+/* sign up form */
+.join {
+  background-color: lightgrey;
+  border: 2px solid grey;
+  border-radius: 12px;
+  padding: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  font-size: 18px;
+  padding: 8px;
+  border: 2px solid grey;
+  border-radius: 5px;
+  width: 70%;
+}
+
+.field {
+  margin-bottom: 15px;
+}
+
+/* thank you message, only shows after you press the button */
+.done {
+  display: none;
+  background-color: white;
+  border: 2px solid MediumSeaGreen;
+  border-radius: 12px;
+  padding: 15px;
+}
+
+.done:target {
+  display: block;
+}
+
+.done:target + form {
+  display: none;
+}
+
+/* contact */
+.cbox {
+  border: 2px solid grey;
+  border-radius: 12px;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+.k {
+  font-weight: bold;
+  color: DodgerBlue;
+}
+
+.v {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.n {
+  font-size: 14px;
+  color: grey;
+}
+
+/* bottom of the page */
+footer {
+  background-color: lightblue;
+  border-top: 3px solid DodgerBlue;
+  padding: 15px 0;
+  margin-top: 30px;
+  text-align: center;
+}
+
+footer span {
+  margin-left: 10px;
+  margin-right: 10px;
+}
