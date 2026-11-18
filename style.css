@@ -33,6 +33,12 @@ h3 {
   text-decoration: none;
 }
 
+.container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 .nav {
   background-color: lightblue;
   border-bottom: 3px solid DodgerBlue;
