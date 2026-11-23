@@ -1,55 +1,70 @@
+/*smooth scroll for hrefs*/
+html {
+  scroll-behavior: smooth;
+}
 
+/* navbar - stays at the top when scrolling */
+.nav {
+  background-color: #9edce1;
+  border-bottom: 2px solid white;
+  padding: 10px 0;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* body */
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 1.5;
-  color: black;
-  background-color: white;
+  color: #1f3a40;
+  background-color: #deebeb;
   margin: 0;
 }
 
 h1 {
   font-size: 40px;
-  color: black;
 }
 
 h2 {
   font-size: 30px;
-  color: DodgerBlue;
+  color: #2d6a73;
 }
 
 h3 {
   font-size: 20px;
-  color: black;
+  color: #1f3a40;
 }
 
-.title {
-  text-size-adjust: 9;
-}
-
-.wrap {
-  width: 80%;
-  margin: 0 auto;
+/* no underline on links */
+a {
   text-decoration: none;
 }
 
-.container {
-  display: flex;
-  align-items: center;
-  gap: 20px;
+/* centers everything */
+.wrap {
+  width: 80%;
+  margin: 0 auto;
 }
 
+/* navbar */
 .nav {
-  background-color: lightblue;
-  border-bottom: 3px solid DodgerBlue;
+  background-color: #9edce1;
+  border-bottom: 2px solid white;
   padding: 10px 0;
 }
 
 .brand {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: bold;
-  color: black;
-  text-decoration: none;
+  color: #1f3a40;
+}
+
+.logo {
+  vertical-align: middle;
+  margin-right: 10px;
 }
 
 .links {
@@ -57,18 +72,20 @@ h3 {
 }
 
 .links a {
-  color: black;
+  color: #1f3a40;
   margin-left: 15px;
 }
 
+/* hero */
 .hero {
-  background-color: lightblue;
+  background-color: #c0e5e8;
+  color: #1f3a40;
   padding: 30px 0;
 }
 
 .hero h1 {
-  color: white;
-  text-shadow: 2px 2px 4px black;
+  color: #1f3a40;
+  text-shadow: 1px 1px 2px white;
 }
 
 .eyebrow {
@@ -76,40 +93,58 @@ h3 {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: DodgerBlue;
+  color: #2d6a73;
+}
+
+.hero .eyebrow {
+  color: #1f3a40;
 }
 
 .lead {
   font-size: 20px;
 }
 
+.pic {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* buttons */
 .btn {
   background-color: white;
-  color: black;
+  color: #1f3a40;
   font-size: 18px;
-  border: 2px solid black;
+  font-weight: bold;
+  border: 2px solid #2d6a73;
   border-radius: 8px;
   padding: 10px;
   margin-right: 10px;
 }
 
 .btn-primary {
-  background-color: DodgerBlue;
+  background-color: #2d6a73;
   color: white;
 }
 
+/* white box in the hero */
 .get {
   background-color: white;
-  border: 2px solid DodgerBlue;
+  color: #1f3a40;
+  border: 2px solid #9edce1;
   border-radius: 12px;
   padding: 15px;
   margin-top: 20px;
 }
 
-.get b {
-  color: DodgerBlue;
+.get .eyebrow {
+  color: #2d6a73;
 }
 
+.get b {
+  color: #2d6a73;
+}
+
+/* sections */
 section {
   padding: 20px 0;
 }
@@ -118,33 +153,24 @@ section {
   font-size: 19px;
 }
 
+/* boxes are white so they are lighter than the page background */
 .card {
-  background-color: lightgrey;
-  border: 2px solid grey;
+  background-color: white;
+  border: 2px solid #9edce1;
   border-radius: 12px;
   padding: 15px;
   margin-top: 10px;
-}
-
-.deep {
-  background-color: lightblue;
-  border-color: DodgerBlue;
 }
 
 .pair {
-  background-color: lightblue;
-  border: 2px solid DodgerBlue;
+  background-color: white;
+  border: 2px solid #9edce1;
   border-radius: 12px;
   padding: 15px;
   margin-top: 10px;
 }
 
-.arrow {
-  font-size: 30px;
-  text-align: center;
-  color: DodgerBlue;
-}
-
+/* ways to help - radio hidden, label is the card */
 .sr {
   opacity: 0;
   width: 1px;
@@ -154,8 +180,8 @@ section {
 .way {
   display: block;
   font-weight: normal;
-  background-color: lightgrey;
-  border: 2px solid grey;
+  background-color: white;
+  border: 2px solid #9edce1;
   border-radius: 12px;
   padding: 15px;
   margin-top: 10px;
@@ -164,33 +190,40 @@ section {
 .pick::before {
   content: "Click to choose";
   font-weight: bold;
-  color: DodgerBlue;
+  color: #2d6a73;
 }
 
 .sr:checked + .way {
-  background-color: lightblue;
-  border-color: DodgerBlue;
+  background-color: #9edce1;
+  border-color: #2d6a73;
 }
 
 .sr:checked + .way .pick::before {
   content: "Chosen!";
 }
 
+/* sign up */
 .join {
-  background-color: lightgrey;
-  border: 2px solid grey;
+  background-color: #9edce1;
+  color: #1f3a40;
+  border: 2px solid white;
   border-radius: 12px;
   padding: 15px;
 }
 
+.join h2 {
+  color: #1f3a40;
+}
+
 label {
   font-weight: bold;
+  margin-right: 10px;
 }
 
 input {
   font-size: 18px;
   padding: 8px;
-  border: 2px solid grey;
+  border: 2px solid #2d6a73;
   border-radius: 5px;
   width: 70%;
 }
@@ -199,10 +232,12 @@ input {
   margin-bottom: 15px;
 }
 
+/* thank you box - hidden until the form is sent */
 .done {
   display: none;
   background-color: white;
-  border: 2px solid MediumSeaGreen;
+  color: #1f3a40;
+  border: 2px solid #c0e5e8;
   border-radius: 12px;
   padding: 15px;
 }
@@ -215,8 +250,10 @@ input {
   display: none;
 }
 
+/* contact */
 .cbox {
-  border: 2px solid grey;
+  background-color: white;
+  border: 2px solid #9edce1;
   border-radius: 12px;
   padding: 15px;
   margin-top: 10px;
@@ -224,7 +261,7 @@ input {
 
 .k {
   font-weight: bold;
-  color: DodgerBlue;
+  color: #2d6a73;
 }
 
 .v {
@@ -234,12 +271,14 @@ input {
 
 .n {
   font-size: 14px;
-  color: grey;
+  color: #4a5568;
 }
 
+/* footer */
 footer {
-  background-color: lightblue;
-  border-top: 3px solid DodgerBlue;
+  background-color: #9edce1;
+  color: #1f3a40;
+  border-top: 2px solid white;
   padding: 15px 0;
   margin-top: 30px;
   text-align: center;
